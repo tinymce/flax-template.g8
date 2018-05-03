@@ -13,5 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalacheck" %% "scalacheck" % "1.13.5" % Test withSources,
   "org.specs2" %% "specs2-scalacheck" % "4.0.3" % Test withSources,
   "org.typelevel" %% "scalaz-specs2" % "0.5.2" % Test withSources,
-  "com.ephox" %% "flax" % "2.7.2" % Test withSources
+  "com.ephox" %% "flax" % "2.7.4" % Test withSources
 )
+
+parallelExecution in Test := false
